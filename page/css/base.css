@@ -1,0 +1,221 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family:"MyIcon";
+    src:url("../font/glyphicons-halflings-regular.woff2");
+}
+body{
+    background-image:url("../img/bg.jpg");
+    position:relative;
+    text-align:center;
+}
+/*头部样式*/
+.header{
+    width:100%;
+    height:50px;
+    background:#191818;
+}
+.container {
+    width:1170px;
+    height:100%;
+    margin:0px auto;
+    position:relative;
+}
+.title {
+    text-decoration:none;
+    font-size: 18px;
+    line-height:50px;
+    color:#eeeeee;
+    display:inline-block;
+    float:left;
+    margin:0px 15px;
+}
+.menu {
+    float:left;
+}
+.menu > li{
+    displat:inline-block;
+    float:left;
+    height:50px;
+    width:58px;
+    font-size: 14px;
+    line-height: 50px;
+    text-align:center;
+}
+.menu > li a{
+    list-style:none;
+    text-decoration: none;
+    color: white;
+}
+.search_bar > input {
+    display:inline-block;
+    position:absolute;
+    height: 22px;
+    outline:none;
+    border:1px solid;
+    border-radius:8px;
+    font-size:14px;
+    right:60px;
+    top:50%;
+    transform:translateY(-50%);
+    padding: 5px 10px;
+}
+.search_bar > button{
+    display: inline-block;
+    position: absolute;
+    width: 54px;
+    height: 34px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    top:50%;
+    transform:translateY(-50%);
+    right:0px;
+    background:white;
+    color: #555555;
+    outline:none;
+}
+/*中间内容样式*/
+.content {
+
+    display:inline-block;
+    position:relative;
+    width:1170px;
+    margin: 30px auto 0px auto;
+}
+.content_left {
+
+    float:left;
+    width:66%;
+    padding: 0px 20px 0px 0px;
+    box-sizing:border-box;
+}
+.content_right {
+
+    float: right;
+    width: 34%;
+    padding: 0px 0px 0px 0px;
+}
+
+/* 内容右边样式 */
+.right_moodule{
+    display: inline-block;
+    width: 100%;
+    background: #1f1f1f;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px 15px 25px 15px;
+    margin-bottom: 20px;
+}
+.right_moodule div {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    padding: 15px 5px 15px 0px;
+    color: dodgerblue;
+}
+
+.right_moodule > a {
+    display: inline-block;
+    font-size: 14px;
+    color: dodgerblue;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.right_moodule > ul > li {
+    list-style: none;
+    color: white;
+    padding: 8px 0px;
+    border-bottom: 1px solid #292929;
+}
+
+.right_moodule > ul > li > a {
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+.right_moodule > ul > li > div {
+    padding: 5px 0px;
+}
+.right_moodule > ul > li > div > span{
+    font-size: 14px;
+    color: white;
+}
+
+.right_moodule > ul > li > p {
+    font-size: 14px;
+    color: #777777;
+}
+.pull_right {
+    position: absolute;
+    right: 15px;
+}
+
+.right_moodule > span {
+    display: inline-block;
+    width: 50%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.right_moodule > span > a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 30px;
+}
+.footer {
+    width: 100%;
+    height: 60px;
+    background: #191818;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer > ul {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.footer > ul > li {
+    display: inline-block;
+    color: #a2a2a2;
+    float: left;
+    font-size: 14px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer > p {
+    margin-top: 10px;
+    color: #a2a2a2;
+}
+
+/*分页插件*/
+.page_tool{
+    display:inline-block;
+    margin-top:20px;
+}
+.page_tool > ul > li{
+    display:inline-block;
+    list-style:none;
+    /*background:pink;*/
+    background-color:white;
+    width:40px;
+    height:30px;
+    border:1px solid black;
+    text-align:center;
+    line-height:30px;
+    float:left;
+    cursor:pointer;
+}
+.page_tool > ul > li:hover{
+    background:gray !important;
+}
+.now_page{
+    background: #333 !important;
+    color: white !important;
+}
